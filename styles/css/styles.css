@@ -1,3 +1,114 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  background: #1d1e28 url("../../images/bg-stars.svg");
+  display: flex;
+  flex-direction: column;
+  font-family: "Red Hat Text", sans-serif;
+  min-height: 100vh;
+}
+
+header {
+  padding: 135px 0 105px;
+  z-index: 1;
+}
+
+.heading {
+  color: #fff;
+  font-size: 22px;
+  letter-spacing: 7.5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.countdown {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 688px;
+  width: 87.2%;
+  z-index: 1;
+}
+.countdown .section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 21.5%;
+}
+.countdown .section .card {
+  background: #343650;
+  border-radius: 8px;
+  position: relative;
+}
+.countdown .section .card::before {
+  background: rgba(0, 0, 0, 0.15);
+  border-bottom: solid 1px rgba(0, 0, 0, 0.25);
+  content: "";
+  height: 50%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.countdown .section .card::after {
+  background: #000;
+  border-radius: 8px;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  z-index: -1;
+}
+.countdown .section .card .number {
+  color: #fb5e84;
+  display: block;
+  font-size: 80px;
+  letter-spacing: -2.4px;
+  padding: 17px 0 18px 0;
+}
+.countdown .section .card .left-half-circle {
+  position: absolute;
+  left: 0;
+  top: calc(50% - 6px);
+}
+.countdown .section .card .right-half-circle {
+  position: absolute;
+  right: 0;
+  top: calc(50% - 6px);
+}
+.countdown .section .label {
+  color: #8385a9;
+  display: block;
+  font-size: 14px;
+  letter-spacing: 5.92px;
+  line-height: 1;
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+
+footer {
+  background: url("../../images/pattern-hills.svg");
+  margin-top: auto;
+  padding: 100px 0 72px;
+  position: relative;
+  z-index: 1;
+}
+
+.socials {
+  text-align: center;
+}
+.socials .social-icon {
+  margin: 0 16px;
+}
+.socials .social-icon:hover {
+  cursor: pointer;
+  fill: #fb5e84;
+}
 
 /*# sourceMappingURL=styles.css.map */
